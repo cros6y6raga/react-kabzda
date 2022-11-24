@@ -2,14 +2,14 @@ import React, {useState} from "react";
 
 type AccordionPropsType = {
     titleValue: string
-    //collapsed?: boolean
+    collapsed?: boolean
 }
 
 export function UncontrolledAccordion(props: AccordionPropsType) {
     console.log('Accordion rendering')
     const [collapsed, setCollapsed] = useState(false)
     const onClickHandler = () => {
-
+        collapsed ? setCollapsed(false) : setCollapsed(true)
     }
     return <>
         <AccordionTitle title={props.titleValue}/>
