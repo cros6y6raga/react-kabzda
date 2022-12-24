@@ -48,6 +48,7 @@ function App() {
             {/*<Rating value={5}/>*/}
             {/*<Rating value={5}/>*/}
             {/*<Rating value={5}/>*/}
+            {/*<Rating value={5}/>*/}
         </div>
     );
 }
